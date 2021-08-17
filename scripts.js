@@ -1,3 +1,4 @@
+// Home Page Hero Slider
 $(".hero-slider").slick({
     dots: true,
     infinite: true,
@@ -24,12 +25,12 @@ var Drip = ( function() {
       shapes.forEach( function( shape, index ) {
         shape.points = [];
         shape.alpha = 1 - ( index / shapes.length );
-        shape.hue = (index % 15 === 0 ? 14 : 19) + ~~(Math.random() * 10 - 5);
+        shape.hue = (index % 13 === 0 ? 14 : 17) + ~~(Math.random() * 8 - 5);
         shape.saturation = 100;
         shape.lightness = 50;
         for ( i = 0; i < 21; ++i ) {
-          y = ( i % 2 === 0 ? Math.random() * 20 : Math.random() * ( height * .25 ) ) + ( index * ( height / ( shapes.length - 1 ) ) );
-          rad = Math.random() * 20;
+          y = ( i % 2 === 0 ? Math.random() * 40 : Math.random() * ( height * .25 ) ) + ( index * ( height / ( shapes.length - 1 ) ) );
+          rad = Math.random() * 80;
           shape.points.push( {
             x: i * 20,
             ox: i * 20,
@@ -39,7 +40,7 @@ var Drip = ( function() {
             rad: rad,
             orad: rad,
             angle: Math.PI * Math.random(),
-            speed: ( ( Math.PI / 80 ) + ( ( Math.PI / 80 ) * Math.random() ) ) * .4
+            speed: ( ( Math.PI / 80 ) + ( ( Math.PI / 80 ) * Math.random() ) ) * 1
           } );
         }
       } );
@@ -131,3 +132,39 @@ var Drip = ( function() {
 }() );
 
 Drip.init( document.getElementById( 'drip-back' ) );
+
+// About Page Time Line
+
+(function () {
+  "use strict";
+
+  // define variables
+  var items = document.querySelectorAll("#about-timeline li");
+
+  // check if an element is in viewport
+  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function callbackFunc() {
+    for (var i = 0; i < items.length; i++) {
+      if (isElementInViewport(items[i])) {
+        items[i].classList.add("in-view");
+      }
+    }
+  }
+
+  // listen for events
+  window.addEventListener("load", callbackFunc);
+  window.addEventListener("resize", callbackFunc);
+  window.addEventListener("scroll", callbackFunc);
+})();
+
