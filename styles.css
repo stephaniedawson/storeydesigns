@@ -2,12 +2,7 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: #f9f9f9;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
     text-transform: uppercase;
     letter-spacing: -2px !important;
     font-family: 'Lacquer', cursive;
@@ -83,9 +78,6 @@ a:hover {
 .slick-dots {
     display: none !important;
 }
-#row-1 {
-    
-}
 #row-1 img {
     transition: 1s;
 }
@@ -155,7 +147,6 @@ a:hover {
 footer {
     background-color: #f9f9f9;
 }
-
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav-scroll {
         margin: 0 auto;
