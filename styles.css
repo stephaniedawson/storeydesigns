@@ -123,7 +123,7 @@ a:hover {
     cursor: pointer;
 }
 #row-4 {
-    background: linear-gradient(240deg, #2f2f2f, #000);
+    background: linear-gradient(120deg, #2f2f2f, #000);
     position: relative;
     transform: skew(0deg, 6deg);
     padding: 50px 0;
@@ -151,10 +151,18 @@ footer {
     .navbar-expand-lg .navbar-nav-scroll {
         margin: 0 auto;
     }
-    .hero-slide {
-        height: 550px;
-    }
     .brand-img {
         height: 70px;
     }
+}
+
+
+/* ABOUT PAGE */
+#home-hero-about .hero-slide {
+    overflow: hidden;
+    height: 400px;
+}
+
+#home-hero-about .hero-title {
+    color: #f9f9f9;
 }
