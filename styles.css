@@ -2,10 +2,13 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: #f9f9f9;
 }
+h1 {
+    font-family: 'Lacquer', cursive;
+}
 h1,h2,h3,h4,h5,h6 {
     text-transform: uppercase;
     letter-spacing: -2px !important;
-    font-family: 'Lacquer', cursive;
+    font-weight: 700 !important;
 }
 a {
     color: #171717 !important;
