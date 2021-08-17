@@ -67,7 +67,7 @@ a:hover {
     background-position: center center;
 }
 .slick-prev:before, .slick-next:before {
-    color: #f15025;
+    color: #898989;
 }
 .hero-overlay {
     background: rgb(0, 0, 0, 0.75);
@@ -78,7 +78,7 @@ a:hover {
     z-index: 1;
 }
 .hero-title {
-    color: #f15025;
+    color: #898989;
 }
 .slick-dots {
     display: none !important;
