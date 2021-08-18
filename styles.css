@@ -436,6 +436,25 @@ time {
     width: 100%;
     min-height: 300px !important;
 }
-.box-2 {
+.port-box {
     height: 600px;
+    overflow: hidden;
 }
+.port-tile {
+    height: 300px;
+}
+.over-text {
+    background: #00000090; 
+    color: #fff; 
+    padding: 5px;
+}
+.over-text-box {
+    background: #00000090; 
+    color: #fff;  
+    font-size: 26px; 
+    font-weight: bold;
+}
+.slick-slide img {cursor: pointer;}
+.slick-prev { left: 10px; z-index: 1;}
+.slick-next{ right: 10px; z-index: 1;}
+.slick-prev:before, .slick-next:before { color: #171717 !important;}
