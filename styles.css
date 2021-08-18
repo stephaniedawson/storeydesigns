@@ -371,3 +371,51 @@ time {
     transform: translateX(-50%) scale(1);
   }
 }
+
+/* Services Page */
+.hero-slider-services .hero-slide {
+    background-image: url("https://source.unsplash.com/1600x900/?skull");
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    margin-top: 80px;
+}
+
+.hero-slider-services .hero-overlay {
+    background: rgb(0, 0, 0, 0.75);
+    width: 100%;
+    min-height: 300px !important;
+}
+.service-para {
+    height: 600px;
+    background-color: #efefef;
+    color: #252525;
+}
+#service-img-1 {
+   background-image: url("https://source.unsplash.com/1600x900/?horror");
+   background-size: cover;
+   background-position: center center; 
+   height: 100%;
+   width: 100%;
+}
+#service-img-2 {
+   background-image: url("https://source.unsplash.com/1600x900/?bones");
+   background-size: cover;
+   background-position: center center; 
+   height: 100%;
+   width: 100%;
+}
+#service-img-3 {
+   background-image: url("https://source.unsplash.com/1600x900/?scary");
+   background-size: cover;
+   background-position: center center; 
+   height: 100%;
+   width: 100%;
+}
+#service-img-4 {
+   background-image: url("https://source.unsplash.com/1600x900/?halloween");
+   background-size: cover;
+   background-position: center center; 
+   height: 100%;
+   width: 100%;
+}
