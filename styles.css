@@ -387,35 +387,32 @@ time {
     min-height: 300px !important;
 }
 .service-para {
-    height: 600px;
     background-color: #efefef;
     color: #252525;
+    height: 700px;
 }
-#service-img-1 {
-   background-image: url("https://source.unsplash.com/1600x900/?horror");
-   background-size: cover;
-   background-position: center center; 
-   height: 100%;
-   width: 100%;
+.service-img {
+    height: 350px;
+    overflow: hidden;
 }
-#service-img-2 {
-   background-image: url("https://source.unsplash.com/1600x900/?bones");
-   background-size: cover;
-   background-position: center center; 
-   height: 100%;
-   width: 100%;
+.service-img:hover {
+    
 }
-#service-img-3 {
-   background-image: url("https://source.unsplash.com/1600x900/?scary");
-   background-size: cover;
-   background-position: center center; 
-   height: 100%;
-   width: 100%;
+
+@media screen and (min-width: 768px) {
+    .service-para {
+    height: 451px;
 }
-#service-img-4 {
-   background-image: url("https://source.unsplash.com/1600x900/?halloween");
-   background-size: cover;
-   background-position: center center; 
-   height: 100%;
-   width: 100%;
+.service-img {
+    height: 451px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+    .service-para {
+    height: 651px;
+}
+.service-img {
+    height: 651px;
+}
 }
