@@ -421,3 +421,21 @@ time {
     height: 651px;
 }
 }
+
+/* Work Page */
+.hero-slider-work .hero-slide {
+    background-image: url("https://source.unsplash.com/1600x900/?skull");
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    margin-top: 80px;
+}
+
+.hero-slider-work .hero-overlay {
+    background: rgb(0, 0, 0, 0.75);
+    width: 100%;
+    min-height: 300px !important;
+}
+.box-2 {
+    height: 600px;
+}
