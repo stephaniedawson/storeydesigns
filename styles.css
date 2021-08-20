@@ -447,6 +447,7 @@ time {
     background: #00000090; 
     color: #fff; 
     padding: 5px;
+    z-index: 10;
 }
 .over-text-box {
     background: #00000090; 
@@ -493,7 +494,8 @@ time {
     transition: .5s ease;
 }
 .port-tile:hover .nav-overlay {
-  opacity: .8;
+    cursor: pointer;
+    opacity: .7;
 }
 @media screen and (min-width: 1024px) {
     .box-2 {
