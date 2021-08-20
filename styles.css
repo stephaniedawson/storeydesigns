@@ -441,6 +441,7 @@ time {
 }
 .port-tile {
     height: 100px;
+    z-index: 2;
 }
 .over-text {
     background: #00000090; 
@@ -451,7 +452,9 @@ time {
     background: #00000090; 
     color: #fff;  
     font-size: 26px; 
-    font-weight: bold;
+    font-weight: 900;
+    z-index: 2;
+    padding: 6px 10px;
 }
 .slick-slide img {cursor: pointer;}
 .slick-prev { left: 10px; z-index: 1;}
@@ -480,8 +483,17 @@ time {
     transform: scale(1);
     cursor: pointer;
 }
-.over-text-box {
-    z-index: 2;
+.nav-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    color: #efefef;
+    z-index: 1;
+    opacity: 0;
+    transition: .5s ease;
+}
+.port-tile:hover .nav-overlay {
+  opacity: .8;
 }
 @media screen and (min-width: 1024px) {
     .box-2 {

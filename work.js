@@ -10,7 +10,7 @@ $(document).ready(function(){
 });
 $('.slider-nav').slick({
   slidesToShow: 5,
-  slidesToScroll: 1,
+  slidesToScroll: 3,
   asNavFor: '.slider-for',
   dots: false,
   centerMode: true,
